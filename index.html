@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="aos-master/dist/aos.css">
+  <!-- add icon link -->
+  <link rel="icon" href="dist/logo/kp-01.svg" type="image/x-icon">
+  <title>KeyNote | Podcast</title>
+</head>
+
+<body class="bg-white font-Heebo ">
+
+  <!-- header start -->
+  <header>
+    <nav
+      class="fixed z-40 flex flex-wrap items-center justify-between w-full px-4 py-4 text-lg text-gray-700 shadow-md md:py-0 backdrop-blur-sm">
+      <div>
+        <a href="#">
+          <img src="dist/logo/kp-01.png" alt="logo" class="w-20">
+        </a>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="w-6 h-6 cursor-pointer md:hidden" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+        <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
+          <li>
+            <a class="block py-2 md:p-4 hover:text-sky-700" href="#">Home</a>
+          </li>
+          <li>
+            <a class="block py-2 md:p-4 hover:text-sky-700" href="#series">Episodes</a>
+          </li>
+          <li>
+            <a class="block py-2 md:p-4 hover:text-sky-700" href="#reviews">Reviews</a>
+          </li>
+          <li>
+            <a class="block py-2 md:p-4 hover:text-sky-700" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="block py-2 md:p-4 hover:text-sky-700" href="#">Contact</a>
+          </li>
+          <div class="hidden py-2 md:p-4 md:flex">
+            <span class="text-lg">|</span>
+          </div>
+          <li>
+            <hr class="w-full h-2 md:hidden">
+            <a class="block px-4 py-3 duration-500 md:m-1 hover:bg-sky-500 rounded-xl hover:text-white active:bg-sky-800 "
+              href="#">Explore</a>
+          </li>
+          <li>
+            <a class="block px-4 py-3 hover:bg-sky-500 hover:text-white rounded-xl md:m-1 active:bg-sky-800"
+              href="#">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <!-- hero start -->
+  <div class="grid grid-cols-1 px-4 pt-20 md:h-screen md:mx-12 md:grid-cols-2">
+    <div class="flex flex-col gap-2 md:pt-10">
+      <h1 class="text-4xl text-blue-900 md:text-6xl">
+        Let's make what you heard are preciously worth it to hear</h1>
+      <p class="text-sm md:text-sm text-slate-500">
+        Waste of resources of competitors are jumping the shark <br>
+        for to be inspired is to become creative.
+      </p>
+
+      <div class="flex items-center gap-4 pt-2">
+        <a href="#"
+          class="px-4 py-4 text-white duration-500 rounded-lg cursor-pointer bg-sky-600 active:bg-sky-800 hover:bg-sky-400">
+          Subscribes
+        </a>
+        <a href="#"
+          class="flex items-center gap-2 px-3 py-2 duration-500 rounded-lg cursor-pointer hover:bg-sky-600 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 duration-300 rotate-45 hover:rotate-12" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z" />
+          </svg>
+          <span>Episodes</span>
+        </a>
+      </div>
+
+      <!-- Counting -->
+      <div class="mt-4">
+        <h4 class="text-gray-500">Engagement recently</h4>
+        <div class="flex items-center gap-4">
+          <div class="flex flex-col items-center gap-2 mt-2">
+            <div data-target="1500000" class="text-4xl font-medium tracking-tight text-blue-900 count">0</div>
+            <Span class="text-base text-gray-500">Listeners</Span>
+          </div>
+          <div class="flex flex-col items-center gap-2 mt-2">
+            <div data-target="800000" class="text-4xl font-medium tracking-tight text-blue-900 count">0</div>
+            <Span class="text-base text-gray-500">Subscribes</Span>
+          </div>
+        </div>
+      </div>
+      <!-- Counting end -->
+    </div>
+
+    <div class="pt-10 md:ml-10">
+      <div class="bg-[url('/dist/images/hero.jpg')] bg-cover bg-center h-96 rounded-md relative">
+        <div class="absolute -translate-x-1/2 left-1/2 -top-5 md:translate-y-1/2 md:-left-3 md:bottom-5">
+          <div class="flex flex-col justify-center bg-white rounded-lg shadow-lg bg-opacity-40">
+
+            <div class="flex gap-2 px-3 py-2 pt-3 duration-500 hover:scale-110">
+              <img src="dist/logo-podcast/apple-podcasts_wechat__cq3l3kjucay6_og-removebg-preview.png" alt="logo"
+                class="w-7 h-7 hover:animate-bounce">
+              <div class="duration-500 hover-underline-animation">
+                <h5 class="text-xs text-gray-500">Podcast Patform</h5>
+                <h1 class="text-lg font-medium">Apple Podcast</h1>
+              </div>
+            </div>
+
+            <div class="flex gap-2 px-3 py-2 duration-500 hover:scale-110">
+              <img src="dist/logo-podcast/1200px-Google_Podcasts_icon.svg-removebg-preview.png" alt="logo"
+                class="w-7 h-7 hover:animate-bounce">
+              <div class="hover-underline-animation">
+                <h5 class="text-xs text-gray-500">Podcast Patform</h5>
+                <h1 class="text-lg font-medium ">GPodcast</h1>
+              </div>
+            </div>
+
+            <div class="flex gap-2 px-4 py-2 duration-500 hover:scale-110">
+              <img src="dist/logo-podcast/spotify-logo-png-7057.png" alt="logo" class="w-7 h-7 hover:animate-bounce">
+              <div class="hover-underline-animation">
+                <h5 class="text-xs text-gray-500">Podcast Patform</h5>
+                <h1 class="text-lg font-medium">Spotify</h1>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- hero end -->
+
+  <!-- series start -->
+  <hr class="w-full border-[1px] mt-12 px-4 md:px-20" id="series">
+  <section class=" h-52 md:h-40 md:py-10">
+    <div class="flex flex-wrap items-center justify-between gap-4 px-4 mt-2 justify-items-center md:mx-12">
+
+      <div class="flex items-end gap-1 py-3 duration-500 hover:scale-125" data-aos="fade-right"
+        data-aos-duration="3000">
+        <h2 class="text-2xl text-sky-700 md:text-4xl">ALL</h2>
+        <h5 class="text-base text-gray-800 ">128</h5>
+      </div>
+
+      <div class="flex items-end gap-1 py-3 duration-500 hover:scale-125" data-aos="fade-right"
+        data-aos-duration="3000">
+        <h2 class="text-2xl text-sky-700 md:text-4xl">Business</h2>
+        <h5 class="text-base text-gray-800">80</h5>
+      </div>
+
+      <div class="flex items-end gap-1 py-3 duration-500 hover:scale-125" data-aos="fade-right"
+        data-aos-duration="3000">
+        <h2 class="text-2xl text-sky-700 md:text-4xl">Self Growth</h2>
+        <h5 class="text-base text-gray-800">45</h5>
+      </div>
+
+      <div class="flex items-end gap-1 py-3 duration-500 hover:scale-125" data-aos="fade-left" data-aos-duration="3000">
+        <h2 class="text-2xl text-sky-700 md:text-4xl">Entertain</h2>
+        <h5 class="text-base text-gray-800">65</h5>
+      </div>
+
+      <div class="flex items-end gap-1 py-3 duration-500 hover:scale-125" data-aos="fade-left" data-aos-duration="3000">
+        <h2 class="text-2xl text-sky-700 md:text-4xl">Fashion</h2>
+        <h5 class="text-base text-gray-800">48</h5>
+      </div>
+
+      <div class="flex items-end gap-1 py-3 duration-500 hover:scale-125" data-aos="fade-left" data-aos-duration="3000">
+        <h2 class="text-2xl text-sky-700 md:text-4xl">Technology</h2>
+        <h5 class="text-base text-gray-800">47</h5>
+      </div>
+    </div>
+  </section>
+  <hr class="w-full border-[1px] mt-2 px-4 md:px-20 ">
+  <!-- series end -->
+
+
+  <!-- series-2 start -->
+  <section>
+    <div class="grid grid-cols-1 gap-2 px-4 mt-10 md:grid-cols-2 md:mx-12">
+
+      <div class="flex flex-col items-start justify-center" data-aos="fade-right" data-aos-duration="3000">
+        <h1 class="text-3xl font-normal md:text-6xl md:font-bold">Whats makes us different from others</h1>
+        <p class="text-sm font-normal text-gray-600">Waste of resources our competitors are jumping the shark for
+          to be inspired ti become creative.
+        </p>
+
+        <div>
+          <div class="flex items-center gap-2 py-2 duration-500 hover:scale-105 hover:text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 text-gray-400 duration-500 hover:rotate-90 hover:text-black" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h1 class="text-lg hover-underline-animation">Lates and feasible topics</h1>
+          </div>
+
+          <div class="flex items-center gap-2 py-2 duration-500 hover:scale-105 hover:text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 text-gray-400 duration-500 hover:rotate-90 hover:text-black" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h1 class="text-lg hover-underline-animation">Curated speakers</h1>
+          </div>
+
+          <div class="flex items-center gap-2 py-2 duration-500 hover:scale-105 hover:text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 text-gray-400 duration-500 hover:rotate-90 hover:text-black" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h1 class="text-lg hover-underline-animation">Available on all platforms</h1>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mt-4" data-aos="fade-left" data-aos-duration="3000">
+        <div class="md:gap-6">
+          <!-- platform start -->
+          <div class="bg-white border-2 rounded-lg shadow-lg">
+
+            <div class="flex items-center justify-between gap-2 px-4 py-4">
+              <h2 class="text-2xl hover-underline-animation md:text-3xl">Platform</h2>
+              <div class="flex gap-2">
+                <!-- Gpodcast logo -->
+                <img src="dist/logo-podcast/1200px-Google_Podcasts_icon.svg-removebg-preview.png" alt="logo"
+                  class="block w-10 h-10 px-2 py-2 duration-500 border-2 border-gray-900 rounded-full hover:rotate-90 hover:scale-105 hover:border-yellow-400 ">
+                <!-- Apple Podcast logo-->
+                <img src="dist/logo-podcast/apple-podcasts_wechat__cq3l3kjucay6_og-removebg-preview.png" alt="logo"
+                  class="block w-10 h-10 px-2 py-2 duration-500 border-2 border-gray-900 rounded-full hover:rotate-90 hover:scale-105 hover:border-purple-500">
+                <!-- Spotify logo -->
+                <img src="dist/logo-podcast/spotify-logo-png-7057.png" alt="logo"
+                  class="block w-10 h-10 px-2 py-2 duration-500 border-2 border-gray-900 rounded-full hover:rotate-90 hover:scale-105 hover:border-green-500">
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center py-4 pt-8">
+
+              <div class="flex items-center gap-2 px-4 py-2 duration-500 rounded-lg hover:bg-slate-200">
+                <div class="bg-[url('/dist/images/platform1.jpg')] bg-cover h-12 w-12 rounded-full">
+                </div>
+                <img src="dist/images/audiowaves.png" alt="audio-waves" class="w-32 h-16">
+                <!-- button play start -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  class="block px-2 py-2 rounded-full active:scale-50 bg-slate-100 hover:scale-110 ">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 h-10 duration-500 text-slate-400 hover:text-black hover:rotate-45" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </a>
+                <!-- button play end -->
+              </div>
+
+              <div class="flex items-center gap-2 px-4 py-2 duration-500 rounded-lg hover:bg-slate-200">
+                <div class="bg-[url('/dist/images/platform1.jpg')] bg-cover h-12 w-12 rounded-full">
+                </div>
+                <img src="dist/images/audiowaves.png" alt="audio-waves" class="w-32 h-16">
+                <!-- button play start -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  class="block px-2 py-2 rounded-full active:scale-50 bg-slate-100 hover:scale-110 ">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 h-10 duration-500 text-slate-400 hover:text-black hover:rotate-45" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </a>
+                <!-- button play end -->
+              </div>
+
+              <div class="flex items-center gap-2 px-4 py-2 duration-500 rounded-lg hover:bg-slate-200">
+                <div class="bg-[url('/dist/images/platform1.jpg')] bg-cover h-12 w-12 rounded-full">
+                </div>
+                <img src="dist/images/audiowaves.png" alt="audio-waves" class="w-32 h-16">
+                <!-- button play start -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  class="block px-2 py-2 rounded-full active:scale-50 bg-slate-100 hover:scale-110 ">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 h-10 duration-500 text-slate-400 hover:text-black hover:rotate-45" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </a>
+                <!-- button play end -->
+              </div>
+
+            </div>
+          </div>
+          <!-- ptalform end -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- series-2 end -->
+
+  <!-- Lates Popular Start -->
+  <main class="px-4 mt-12 md:mx-12 ">
+    <div class="flex items-center justify-between">
+      <div data-aos="fade-right" data-aos-duration="3000">
+        <h1 class="text-3xl font-normal md:text-5xl md:font-bold">Lates Popular Podcast Episodes</h1>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="3000">
+        <p class="text-sm font-normal text-gray-600">Waste of resources our competitors are jumping the shark for to be
+          inspired to become creative.
+        </p>
+      </div>
+    </div>
+
+    <!-- filter button Start -->
+    <div id="myBtnContainer" class="flex flex-wrap items-center justify-center gap-2 mt-10">
+      <button class="px-4 py-2 border-2 rounded-full btn active" onclick="filterSelection('all')">All</button>
+      <button class="px-4 py-2 border-2 rounded-full btn" onclick="filterSelection('busines')">Business</button>
+      <button class="px-4 py-2 border-2 rounded-full btn" onclick="filterSelection('self')"> Self Growth</button>
+      <button class="px-4 py-2 border-2 rounded-full btn" onclick="filterSelection('entertain')"> Entertain</button>
+      <button class="px-4 py-2 border-2 rounded-full btn" onclick="filterSelection('fashion')"> Fashion</button>
+      <button class="px-4 py-2 border-2 rounded-full btn" onclick="filterSelection('tech')"> Technology</button>
+      <button class="px-4 py-2 border-2 rounded-full btn" onclick="filterSelection('health')"> Healt Care</button>
+    </div>
+
+    <div class="container grid items-center grid-cols-2 gap-2 px-4 mt-10 md:grid-cols-4 sm:grid-cols-3"
+      data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+
+      <!-- businers start -->
+      <div class="overflow-hidden duration-500 rounded-md shadow-lg hover:scale-95 filterDiv busines">
+        <div class="aspect-[4/5] md:aspect-[5/4] ">
+          <img src="dist/Popular/podcast(1).jpg" alt="picts">
+          <h2 class="py-2 text-sm font-medium md:text-xl">Empower the team with the right tools and guidance</h2>
+          <div class="flex items-center justify-between px-4 py-2 duration-500 hover:bg-gray-200 hover:text-sky-500">
+            <h2 class="text-xl">40 Mins</h2>
+            <div class="block px-2 py-2 border-2 rounded-full">
+              <a href="#" class="block duration-500 cursor-pointer hover:scale-125 active:rotate-45 hover:rotate-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- businers en -->
+
+      <!-- Selft Growth Start -->
+      <div class="overflow-hidden duration-500 rounded-md shadow-lg hover:scale-95 filterDiv self">
+        <div class="aspect-[4/5] md:aspect-[5/4]">
+          <img src="dist/Popular/podcast(12).jpg" alt="picts">
+          <h2 class="py-2 text-sm font-medium md:text-xl">Empower the team with the right tools and guidance</h2>
+          <div class="flex items-center justify-between px-4 py-2 duration-500 hover:bg-gray-200 hover:text-sky-500">
+            <h2 class="text-xl">40 Mins</h2>
+            <div class="block px-2 py-2 border-2 rounded-full">
+              <a href="#" class="block duration-500 cursor-pointer hover:scale-125 active:rotate-45 hover:rotate-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Selft Growth End -->
+
+      <!-- Entertain Start -->
+      <div class="overflow-hidden duration-500 rounded-md shadow-lg hover:scale-95 filterDiv entertain">
+        <div class="aspect-[4/5] md:aspect-[5/4]">
+          <img src="dist/Popular/podcast(12).jpg" alt="picts">
+          <h2 class="py-2 text-sm font-medium md:text-xl">Empower the team with the right tools and guidance</h2>
+          <div class="flex items-center justify-between px-4 py-2 duration-500 hover:bg-gray-200 hover:text-sky-500">
+            <h2 class="text-xl">40 Mins</h2>
+            <div class="block px-2 py-2 border-2 rounded-full">
+              <a href="#" class="block duration-500 cursor-pointer hover:scale-125 active:rotate-45 hover:rotate-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Entertain End -->
+
+      <!-- Fashion Start -->
+      <div class="overflow-hidden duration-500 rounded-md shadow-lg hover:scale-95 filterDiv fashion">
+        <div class="aspect-[4/5] md:aspect-[5/4]">
+          <img src="dist/Popular/podcast(18).jpg" alt="picts">
+          <h2 class="py-2 text-sm font-medium md:text-xl">Empower the team with the right tools and guidance</h2>
+          <div class="flex items-center justify-between px-4 py-2 duration-500 hover:bg-gray-200 hover:text-sky-500">
+            <h2 class="text-xl">40 Mins</h2>
+            <div class="block px-2 py-2 border-2 rounded-full">
+              <a href="#" class="block duration-500 cursor-pointer hover:scale-125 active:rotate-45 hover:rotate-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fashion End -->
+
+      <!-- Tech Start -->
+      <div class="overflow-hidden duration-500 rounded-md shadow-lg hover:scale-95 filterDiv tech">
+        <div class="aspect-[4/5] md:aspect-[5/4]">
+          <img src="dist/Popular/podcast(16).jpg" alt="picts">
+          <h2 class="py-2 text-sm font-medium md:text-xl">Empower the team with the right tools and guidance</h2>
+          <div class="flex items-center justify-between px-4 py-2 duration-500 hover:bg-gray-200 hover:text-sky-500">
+            <h2 class="text-xl">40 Mins</h2>
+            <div class="block px-2 py-2 border-2 rounded-full">
+              <a href="#" class="block duration-500 cursor-pointer hover:scale-125 active:rotate-45 hover:rotate-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tech End -->
+
+      <!-- Health Start -->
+      <div class="overflow-hidden duration-500 rounded-md shadow-lg hover:scale-95 filterDiv health">
+        <div class="aspect-[4/5] md:aspect-[5/4]">
+          <img src="dist/Popular/podcast(18).jpg" alt="picts">
+          <h2 class="py-2 text-sm font-medium md:text-xl">Empower the team with the right tools and guidance</h2>
+          <div class="flex items-center justify-between px-4 py-2 duration-500 hover:bg-gray-200 hover:text-sky-500">
+            <h2 class="text-xl">40 Mins</h2>
+            <div class="block px-2 py-2 border-2 rounded-full">
+              <a href="#" class="block duration-500 cursor-pointer hover:scale-125 active:rotate-45 hover:rotate-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overflow-hidden duration-500 rounded-md shadow-lg hover:scale-95 filterDiv health">
+        <div class="aspect-[4/5] md:aspect-[5/4]">
+          <img src="dist/Popular/podcast(12).jpg" alt="picts">
+          <h2 class="py-2 text-sm font-medium md:text-xl">Empower the team with the right tools and guidance</h2>
+          <div class="flex items-center justify-between px-4 py-2 duration-500 hover:bg-gray-200 hover:text-sky-500">
+            <h2 class="text-xl">40 Mins</h2>
+            <div class="block px-2 py-2 border-2 rounded-full">
+              <a href="#" class="block duration-500 cursor-pointer hover:scale-125 active:rotate-45 hover:rotate-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overflow-hidden duration-500 rounded-md shadow-lg hover:scale-95 filterDiv health">
+        <div class="aspect-[4/5] md:aspect-[5/4]">
+          <img src="dist/Popular/podcast(1).jpg" alt="picts">
+          <h2 class="py-2 text-sm font-medium md:text-xl">Empower the team with the right tools and guidance</h2>
+          <div class="flex items-center justify-between px-4 py-2 duration-500 hover:bg-gray-200 hover:text-sky-500">
+            <h2 class="text-xl">40 Mins</h2>
+            <div class="block px-2 py-2 border-2 rounded-full">
+              <a href="#" class="block duration-500 cursor-pointer hover:scale-125 active:rotate-45 hover:rotate-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Health End -->
+    </div>
+    <!-- filter button End -->
+  </main>
+  <!-- Lates Popular end -->
+
+  <!-- pricing start -->
+  <section class="min-h-screen px-4 mt-12 md:mx-12">
+    <div class="flex flex-col items-center justify-center gap-2 ">
+      <h1 class="text-2xl font-medium md:text-4xl md:font-bold"> Flexible pricing plans that suits with your needs</h1>
+      <p class="text-sm font-normal text-slate-400 md:text-lg">select plan below or start a 14-day free trial to
+        see what Podcasting provide to you</p>
+    </div>
+    <!-- pricing card start -->
+    <div class="grid items-center justify-between grid-cols-1 gap-2 px-4 py-4 mt-5 md:grid-cols-3">
+
+      <div class="block py-2 duration-500 bg-white border-2 rounded-lg hover:scale-110" data-aos="fade-right">
+        <div class="flex flex-col items-center px-4 py-2">
+          <h2 class="px-4 py-4 my-2 text-white uppercase bg-gray-400 rounded-full">Litle plan</h2>
+          <p class="px-4 text-center">Fast track design thinking yet quarterly sale are at an all-time low.</p>
+          <h1 class="py-6 text-5xl font-bold text-gray-800">$19 <span
+              class="text-sm font-normal text-slate-400">/Mo</span>
+          </h1>
+          <a href="#" class="flex items-center px-4 py-4 bg-gray-300 rounded-full cursor-pointer hover:bg-sky-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <h2> Current Plan</h2>
+          </a>
+        </div>
+        <div class="flex flex-col gap-2 px-6 py-4">
+          <div class="flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="hover-underline-animation">6 Times Skiping</h2>
+          </div>
+          <div class="flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="hover-underline-animation">12 Ads per day</h2>
+          </div>
+          <div class="flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="hover-underline-animation">Free contents only</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="block py-2 duration-500 bg-white border-2 rounded-lg hover:scale-110 hover:bg-sky-300"
+        data-aos="fade-right">
+        <div class="flex flex-col items-center px-4 py-2">
+          <h2 class="px-4 py-4 my-2 text-white uppercase rounded-full bg-sky-400">premium plan</h2>
+          <p class="px-4 text-center">Fast track design thinking yet quarterly sale are at an all-time low.</p>
+          <h1 class="py-6 text-5xl font-bold text-gray-800">$35 <span
+              class="text-sm font-normal text-slate-400">/Mo</span>
+          </h1>
+          <a href="#" class="flex items-center px-4 py-4 rounded-full cursor-pointer bg-sky-400 hover:bg-white">
+            <h2> Select Plan</h2>
+          </a>
+        </div>
+        <div class="flex flex-col gap-2 px-6 py-4">
+          <div class="flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="hover-underline-animation">12 Times Skiping</h2>
+          </div>
+          <div class="flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="hover-underline-animation">6 Ads per day</h2>
+          </div>
+          <div class="flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="hover-underline-animation">Free &premium contents only</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="block py-2 duration-500 bg-white border-2 rounded-lg hover:scale-110 hover:bg-sky-400"
+        data-aos="fade-right">
+        <div class="flex flex-col items-center px-4 py-2">
+          <h2 class="px-4 py-4 my-2 text-white uppercase rounded-full bg-sky-500">deluxe plan</h2>
+          <p class="px-4 text-center">Fast track design thinking yet quarterly sale are at an all-time low.</p>
+          <h1 class="py-6 text-5xl font-bold text-gray-800">$45 <span
+              class="text-sm font-normal text-slate-400">/Mo</span>
+          </h1>
+          <a href="#" class="flex items-center px-4 py-4 bg-gray-300 rounded-full cursor-pointer hover:bg-white">
+            <h2> Select Plan</h2>
+          </a>
+        </div>
+        <div class="flex flex-col gap-2 px-6 py-4">
+          <div class="flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="hover-underline-animation">Unlimited Skiping<h2>
+          </div>
+          <div class="flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="hover-underline-animation">No Ads</h2>
+          </div>
+          <div class="flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="hover-underline-animation">All contents</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- pricing card end -->
+  </section>
+  <!-- pricing end -->
+
+  <!-- subscibe start -->
+  <section>
+    <div class="grid grid-cols-1 px-6 mt-8 md:grid-cols-2 bg-slate-100">
+
+      <!-- card -->
+      <div class="flex flex-col gap-2 py-6">
+        <h2 class="text-2xl text-center md:text-4xl text-slate-900">New Episodes wil always updated regularly</h2>
+        <p class="text-center text-gray-400 tex-sm">Waste of resources our competitors are jumping the shark for to be
+          inspired
+          is to something else.
+        </p>
+      </div>
+      <div class="rounded-lg ">
+        <div class="items-center justify-between py-10 mx-auto text-center px-5rounded-lg">
+          <div class="px-2 -mt-6">
+            <div class="text-center">
+              <h1 class="w-full my-3 text-3xl font-medium leading-loose text-grey-800">Get the
+                Latest Information</h1>
+              <div class="w-full text-center">
+                <form action="#">
+                  <div class="flex items-center max-w-sm p-1 pr-0 mx-auto">
+                    <input type="email" placeholder="yourmail@example.com"
+                      class="flex-1 p-3 mr-2 rounded appearance-none text-grey-dark focus:outline-none">
+                    <button type="submit"
+                      class="p-3 text-base font-semibold text-white bg-blue-600 rounded-md hover:bg-indigo-600">
+                      Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>>
+      <!-- Card end-->
+    </div>
+  </section>
+  <!-- subscibe end -->
+
+  <!-- footer & review start -->
+  <footer>
+    <div class="mt-10 bg-slate-900">
+      <!-- reviews start -->
+      <div class="mx-6 md:relative " id="reviews">
+
+        <div class="grid grid-cols-1 gap-2 md:absolute md:grid-cols-3 -top-2 md:-top-6">
+          <div class="px-4 py-2 bg-white rounded-md">
+            <p class="text-4xl">" <span class="text-base">
+                Circle back around golden goose, for 360 degre content
+                marketing
+                pool. Digitalize out of the loop, nor social currency of this short
+                life that we don't know the end</span> "</p>
+            <div class="flex items-center gap-3 py-4">
+              <img src="dist/Popular/podcast(10).jpg" alt="" class="w-12 h-12 rounded-full">
+              <div>
+                <h1 class="text-2xl text-gray-800">
+                  Asep Hidayat</h1>
+                <h4 class="text-base text-gray-300">
+                  Product Designer</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 bg-white rounded-md">
+            <p class="text-4xl">" <span class="text-base">
+                Circle back around golden goose, for 360 degre content
+                marketing
+                pool. Digitalize out of the loop, nor social currency of this short
+                life that we don't know the end</span> "</p>
+            <div class="flex items-center gap-3 py-4">
+              <img src="dist/Popular/podcast(10).jpg" alt="" class="w-12 h-12 rounded-full">
+              <div>
+                <h1 class="text-2xl text-gray-800">
+                  Asep Hidayat</h1>
+                <h4 class="text-base text-gray-300">
+                  Product Designer</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 bg-white rounded-md">
+            <p class="text-4xl">" <span class="text-base">
+                Circle back around golden goose, for 360 degre content
+                marketing
+                pool. Digitalize out of the loop, nor social currency of this short
+                life that we don't know the end</span> "</p>
+            <div class="flex items-center gap-3 py-4">
+              <img src="dist/Popular/podcast(10).jpg" alt="" class="w-12 h-12 rounded-full">
+              <div>
+                <h1 class="text-2xl text-gray-800">
+                  Asep Hidayat</h1>
+                <h4 class="text-base text-gray-300">
+                  Product Designer</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- reviews end -->
+
+      <div class="grid justify-between grid-cols-3 gap-3 px-4 py-10 text-white pt-14 md:grid-cols-5 md:pt-64">
+
+        <div class="py-4 md:py-12">
+          <h1>Podcasting</h1>
+          <p>The best sound library for youd</p>
+        </div>
+
+        <div class="flex flex-col gap-2 py-4 md:py-12">
+          <h1 class="text-slate-100">Services</h1>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">About</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">Contact
+            Us</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">Features</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">Blog</a>
+        </div>
+
+        <div class="flex flex-col gap-2 py-4 md:py-12">
+          <h1 class="text-slate-100">Resources</h1>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">Apps</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">Developer</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">Pricing</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">Integration</a>
+        </div>
+
+        <div class="flex flex-col gap-2 py-4 md:py-12">
+          <h1 class="text-slate-100">Support</h1>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">License</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">Get
+            Started</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">Affiliate</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">FAQs</a>
+        </div>
+
+        <div class="flex flex-col gap-2 py-4 md:py-12">
+          <h1 class="text-slate-100">Contact</h1>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">help.podcasting@gmail.com</a>
+          <a href="#"
+            class="duration-500 hover:text-sky-400 hover-underline-animation hover:scale-110 text-slate-400">+123-456-789</a>
+        </div>
+      </div>
+      <hr class="mx-4">
+      <div class="flex items-center gap-2 px-4 py-4 pt-4 text-white justify-evenly">
+        <div>
+          <h1>Term & Conditions</h1>
+          <h2>Privacy</h2>
+        </div>
+        <div>
+          <h2>sahrulsidikpermana &copy;</h2>
+        </div>
+        <div class="flex justify-between gap-2">
+          <a href="https://web.facebook.com/sahrulperman/"
+            class="px-3 py-3 duration-500 rounded-full hover:scale-100 bg-slate-500">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/sahrulbudaya/"
+            class="px-3 py-3 duration-500 rounded-full hover:scale-100 bg-slate-500">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/sahrulbudaya"
+            class="px-3 py-3 duration-500 rounded-full hover:scale-100 bg-slate-500">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="fixed px-2 py-2 duration-500 bottom-16 right-1 hover:scale-90">
+      <a href="#" class="px-4 py-4 text-2xl rounded-full bg-sky-400">🔝
+      </a>
+    </div>
+  </footer>
+  <!-- footer & review end -->
+  <script src="https://kit.fontawesome.com/2475eea6ce.js" crossorigin="anonymous">
+  </script>
+  <script src="aos-master/dist/aos.js"></script>
+  <script src="dist/Js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: skyblue;
+  border: none;
+  color: white;
+}
